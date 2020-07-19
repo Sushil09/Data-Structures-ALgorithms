@@ -1,4 +1,4 @@
-package Questions.Maths_And_Arrays_1;
+//To add 1 to a given number..
 
 import java.util.Arrays;
 

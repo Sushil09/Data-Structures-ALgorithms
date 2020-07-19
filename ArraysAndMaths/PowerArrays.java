@@ -1,4 +1,4 @@
-package Questions.Maths_And_Arrays_1;
+
 import java.util.Stack;
 
 public class PowerArrays {

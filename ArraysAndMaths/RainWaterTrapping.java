@@ -1,4 +1,3 @@
-package Questions.Maths_And_Arrays_1;
 
 public class RainWaterTrapping {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Questions.Maths_And_Arrays_1;
+// To get nCr value in O(N) operation
 
 public class NCRMODM {
     static int[] fact;

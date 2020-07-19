@@ -1,4 +1,4 @@
-package Questions.Maths_And_Arrays_1;
+//To get next permutation of a number Ex:-132,213
 
 import java.util.Arrays;
 

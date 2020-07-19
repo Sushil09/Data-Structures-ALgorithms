@@ -1,4 +1,4 @@
-package Questions.Maths_And_Arrays_1;
+// To get Fibonacci number in log(N) time
 
 public class Fib_Log_N {
     static int MOD=(int)(1E9+7);

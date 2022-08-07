@@ -14,7 +14,7 @@ public class Coin_change {
             return;
         if(sum==0)
             count++;
-        topDown(a,N,sum-a[N]);
+        topDown(a,N,sum-a[N]); // If an element is chosen, it can be choosen, many times.
         topDown(a,N-1,sum);
     }
     static void bottomUp(int[]a,int N,int sum,int K,int idx){

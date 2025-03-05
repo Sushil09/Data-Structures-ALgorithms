@@ -32,4 +32,18 @@ public class CoinChange1 {
         }
             return dp[N][K];
     }
+
+    // Recursive function with memoization
+    static int minCoins(int[] coins, int n, int amount, int[][] dp) {
+        if (amount == 0) return 0;
+        if (n == 0) return Integer.MAX_VALUE / 2;
+        if (dp[n][amount] != -1) return dp[n][amount];
+
+        if (coins[n - 1] <= amount) {
+            return dp[n][amount] = Math.min(minCoins(coins, n, amount - coins[n - 1], dp) + 1,
+                                            minCoins(coins, n - 1, amount, dp));
+        } else {
+            return dp[n][amount] = minCoins(coins, n - 1, amount, dp);
+        }
+    }
 }

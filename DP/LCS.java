@@ -22,7 +22,7 @@ public class LCS {
     }
 
     //bottom up
-    static int longSubSeq(String A, String B, int m, int n, int[][] dp) {
+    static int longSubSeqBottomUp(String A, String B, int m, int n, int[][] dp) {
         // Base case: if either string is empty, LCS length is 0
         if (m == 0 || n == 0) {
             return 0;

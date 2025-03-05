@@ -46,4 +46,17 @@ public class CoinChange1 {
             return dp[n][amount] = minCoins(coins, n - 1, amount, dp);
         }
     }
+      // Recursive function with memoization
+    static int coinChangeWays(int[] coins, int n, int amount, int[][] dp) {
+        if (amount == 0) return 1;
+        if (n == 0) return 0;
+        if (dp[n][amount] != -1) return dp[n][amount];
+
+        if (coins[n - 1] <= amount) {
+            return dp[n][amount] = (coinChangeWays(coins, n, amount - coins[n - 1], dp) % MOD +
+                                    coinChangeWays(coins, n - 1, amount, dp) % MOD) % MOD;
+        } else {
+            return dp[n][amount] = coinChangeWays(coins, n - 1, amount, dp) % MOD;
+        }
+    }
 }
